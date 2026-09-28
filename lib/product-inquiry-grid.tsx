@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import type { Product } from "@/lib/types";
 
 interface ProductInquiryGridProps {
@@ -11,7 +12,7 @@ interface ProductInquiryGridProps {
 
 export function ProductInquiryGrid({ products, whatsappNumber }: ProductInquiryGridProps) {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [quantity, setQuantity] = useState(100);
+  const [quantity, setQuantity] = useState(1);
   const [dimensions, setDimensions] = useState("");
   const [deliveryCity, setDeliveryCity] = useState("");
 
@@ -33,28 +34,29 @@ Please confirm pricing, suitable construction, and delivery details for this req
 
   return (
     <div>
-      {/* 4 Items per row on mobile, reduced gaps, standard sizes */}
-      <div className="grid grid-cols-4 gap-2 sm:grid-cols-4 md:grid-cols-6 lg:gap-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 sm:gap-4">
         {products.map((product) => (
           <button
             key={product.id}
             type="button"
             aria-pressed={selectedProduct?.id === product.id}
             onClick={() => setSelectedProduct(product)}
-            className={`w-full cursor-pointer overflow-hidden rounded-xl border bg-white p-2 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md ${
+            className={`w-full cursor-pointer overflow-hidden rounded-2xl border bg-white p-3 text-left shadow-sm transition-all hover:-translate-y-1 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold ${
               selectedProduct?.id === product.id
                 ? "border-gold ring-1 ring-gold"
                 : "border-[#d8c2a3]/60"
             }`}
           >
-            <div className="aspect-square w-full overflow-hidden rounded-lg bg-[#f0ece4] mb-2">
-              <img
+            <div className="relative mb-3 aspect-[4/3] w-full overflow-hidden rounded-xl bg-[#f0ece4]">
+              <Image
                 src={product.image_url}
                 alt={product.name}
-                className="h-full w-full object-cover"
+                fill
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 20vw"
+                className="object-contain p-2"
               />
             </div>
-            <h3 className="line-clamp-2 text-[10px] font-semibold leading-tight text-forest sm:text-xs">
+            <h3 className="line-clamp-2 min-h-10 text-sm font-semibold leading-5 text-forest sm:min-h-0 sm:text-base">
               {product.name}
             </h3>
           </button>
