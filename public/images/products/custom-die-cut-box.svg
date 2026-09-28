@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Die-cut mailer box illustration</title><desc id="desc">A custom-folded kraft mailer carton with tuck-in tabs and shaped panels.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#eef1e9"/><stop offset="1" stop-color="#dce5d7"/></linearGradient><linearGradient id="front" x2="0" y2="1"><stop stop-color="#a2b28c"/><stop offset="1" stop-color="#718663"/></linearGradient><linearGradient id="side" x2="1" y2="1"><stop stop-color="#72845f"/><stop offset="1" stop-color="#50684e"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="16"/></filter></defs>
+  <rect width="800" height="600" rx="34" fill="url(#bg)"/><circle cx="654" cy="124" r="88" fill="#bcc9ac" opacity=".35"/><path d="M0 472h800" stroke="#c5d0bd" stroke-width="2"/>
+  <ellipse cx="414" cy="463" rx="208" ry="30" fill="#30432d" opacity=".2" filter="url(#shadow)"/>
+  <path d="m222 274 154-90 243 24-145 91z" fill="#bac8a2"/><path d="m376 184 243 24-145 91-242-25z" fill="#a8ba91"/><path d="m232 293 242 22v127l-242-18z" fill="url(#front)"/><path d="m474 315 145-91v120l-145 98z" fill="url(#side)"/>
+  <path d="m222 274 10 19v126l-13-10zm252 41 145-91v24l-145 92z" fill="#d4ddc0"/><path d="m309 241 17 17-85 48-16-16m270 31 26 3v47l-26-4" fill="none" stroke="#566e50" stroke-width="5" stroke-linejoin="round"/><path d="M264 325v88m25-86v89m154-81v86" stroke="#d4ddb9" stroke-width="3" opacity=".55"/>
+</svg>

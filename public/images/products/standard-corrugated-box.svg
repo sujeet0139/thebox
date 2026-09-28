@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Corrugated shipping box illustration</title><desc id="desc">A plain kraft corrugated carton viewed from the front and side.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f7f3eb"/><stop offset="1" stop-color="#e9dfd0"/></linearGradient><linearGradient id="front" x2="0" y2="1"><stop stop-color="#cda978"/><stop offset="1" stop-color="#a97b4e"/></linearGradient><linearGradient id="side" x2="1" y2="1"><stop stop-color="#a77a4d"/><stop offset="1" stop-color="#805a3c"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="16"/></filter></defs>
+  <rect width="800" height="600" rx="34" fill="url(#bg)"/><circle cx="680" cy="115" r="78" fill="#d7c2a1" opacity=".3"/><path d="M0 470h800" stroke="#d8c9b4" stroke-width="2" opacity=".6"/>
+  <ellipse cx="412" cy="465" rx="205" ry="28" fill="#4a3324" opacity=".2" filter="url(#shadow)"/>
+  <path d="m245 255 105-64 245 10-95 60z" fill="#e0c191"/><path d="m500 261 95-60v183l-95 52z" fill="url(#side)"/><path d="m245 255 255 6v175l-255-9z" fill="url(#front)"/>
+  <path d="m350 191 10 68m245-58-100 66" stroke="#8a633f" stroke-width="5" opacity=".7"/><path d="M372 258v173" stroke="#f0d9ae" stroke-width="12" opacity=".72"/><path d="M259 278v136m225-131v135" stroke="#e5c394" stroke-width="2" opacity=".42"/>
+  <path d="m246 255 104-64 1 52-104 60zm255 6 94-60v41l-94 60z" fill="#bd9361" opacity=".9"/>
+</svg>

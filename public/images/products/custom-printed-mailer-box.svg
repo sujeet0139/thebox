@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Mailer box illustration</title><desc id="desc">A folded mailer carton with a hinged lid and tuck-in front.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f5f1e8"/><stop offset="1" stop-color="#e5e5d7"/></linearGradient><linearGradient id="box" x2="0" y2="1"><stop stop-color="#75886d"/><stop offset="1" stop-color="#435c4b"/></linearGradient><linearGradient id="lid" x2="1" y2="1"><stop stop-color="#9ca989"/><stop offset="1" stop-color="#6f8068"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="15"/></filter></defs>
+  <rect width="800" height="600" rx="34" fill="url(#bg)"/><circle cx="135" cy="140" r="92" fill="#c1c9ad" opacity=".3"/><path d="M0 470h800" stroke="#d1d0be" stroke-width="2"/>
+  <ellipse cx="413" cy="458" rx="210" ry="28" fill="#263b2f" opacity=".19" filter="url(#shadow)"/>
+  <path d="m220 286 180-92 244 32-164 91z" fill="url(#lid)"/><path d="m400 194 244 32-164 92-244-32z" fill="#879778"/><path d="m236 292 244 26v121l-244-23z" fill="url(#box)"/><path d="m480 318 164-92v126l-164 87z" fill="#364d3f"/>
+  <path d="m220 286 18 6v129l-18-7zm260 32 164-92v20l-164 93z" fill="#c2a46f"/><path d="M302 330v72m142-58v73" stroke="#9eaf8b" stroke-width="3" opacity=".6"/><path d="m309 242 91-48m83 124 112-63" stroke="#d8d6bb" stroke-width="3" opacity=".45"/>
+</svg>
