@@ -81,6 +81,13 @@ export default async function HomePage() {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": `${siteConfig.url}/#website`,
+        url: siteConfig.url,
+        name: siteConfig.name,
+        publisher: { "@id": `${siteConfig.url}/#organization` },
+      },
+      {
         "@type": "Organization",
         "@id": `${siteConfig.url}/#organization`,
         name: siteConfig.name,
